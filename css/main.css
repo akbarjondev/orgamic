@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-top {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-top__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+.header-top__addr {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header-top__addr-text {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header-top__addr-text::before {
+  content: "";
+  width: 14px;
+  height: 16px;
+  display: block;
+  background-image: url("./../images/location.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 7px;
+}
+
+.header-top__addr-email {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-top__addr-email::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  display: block;
+  background-image: url("./../images/mail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 7px;
+}
+
+.header-top__right {
+  display: flex;
+  align-items: center;
+}
+
+.header-top__right-lang {
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("./../images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  width: 57px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 31px;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* MAIN */
+.main {
+  flex-grow: 1;
+}
