@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/vh.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Orgamic</title>
 </head>
@@ -54,9 +55,31 @@
       </div> <!-- End of container -->
     </div> <!-- End of header-top -->
 
-    <div class="header__bottom">
-      <div class="header-bottom__container">
+    <div class="header-bottom">
+      <div class="header-bottom__container container">
+        <a class="logo" href="index.html">
+          <img class="logo__image" src="./images/logo.svg" alt="logo" width="217" height="50">
+        </a>
 
+        <div class="header-bottom__wrapper">
+          <nav class="nav">
+            <a class="nav__link" href="#">Home +</a>
+            <a class="nav__link nav__link--active" href="#">About +</a>
+            <a class="nav__link" href="#">Shop +</a>
+            <a class="nav__link" href="#">Page +</a>
+            <a class="nav__link" href="#">Contact</a>
+          </nav>
+  
+          <a class="login-btn" href="#">Login</a>
+  
+          <button class="search-btn"><span class="visually-hidden">Search</span></button>
+  
+          <button class="basket">
+            <span class="visually-hidden">Basket</span>
+            <img class="basket__image" src="./images/korzinka.png" alt="Basket icon" width="14" height="11">
+            <span class="basket__counter">1</span>
+          </button>
+        </div>
       </div>
     </div> <!-- End of header__bottom -->
   </header> <!-- End of header -->
