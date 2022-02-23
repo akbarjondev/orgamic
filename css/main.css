@@ -15,12 +15,46 @@ body {
   font-family: "Gilroy", "Arial", sans-serif;
 }
 
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
+.huge-container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.shop-now {
+  padding: 14px 36px;
+  display: inline-block;
+  background-color: #76a713;
+  color: #ffffff;
+  border: 1px solid #76a713;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.shop-now:hover {
+  background-color: #ffffff;
+  color: #76a713;
+}
+
+/* ===================================== */
 
 .header-top {
   border-bottom: 1px solid #eeeeee;
@@ -221,4 +255,91 @@ body {
 /* MAIN */
 .main {
   flex-grow: 1;
+}
+
+/* HERO */
+
+.hero {
+  background-color: rgba(118, 167, 19, 0.31);
+}
+
+.hero-container {
+  position: relative;
+}
+
+.slider__control {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #76a713;
+  background-image: url("./../images/control-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider__control.slider__control--last {
+  background-image: url("./../images/control-left.png");
+  transform: rotate(0deg) translateY(-50%);
+  background-color: #76a713;
+}
+
+.slider__control.slider__control--last.slider__control--next {
+  background-image: url("./../images/control-left.png");
+  transform: rotate(180deg);
+  background-color: #76a713;
+}
+
+.slider__control--prev {
+  transform: rotate(180deg) translateY(-50%);
+  left: 0;
+  top: 50%;
+}
+
+.slider__control--next {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__list {
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 200px; */
+}
+
+.slider__item {
+  padding: 100px 67px;
+  background-image: url("./../images/bg-image.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: auto;
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  max-width: 473px;
+}
+
+.slider__small {
+  order: -1;
+  font-size: 50px;
+  line-height: 74px;
+  color: #76a713;
+  font-weight: 500;
+}
+
+.slider__heading {
+  color: #191d28;
+  font-size: 80px;
+  line-height: 119px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 28px;
 }
