@@ -1,0 +1,91 @@
+.quality {
+  &__wrapper {
+    max-width: 570px;
+  }
+
+  &__heading {
+    font: {
+      size: 60px;
+      weight: 500;
+      family: "Oswald";
+    }
+    margin: {
+      top: 0;
+      bottom: 39px;
+    }
+    line-height: 89px;
+    color: #191d28;
+  }
+
+  &__text {
+    color: #888888;
+    font: {
+      size: 16px;
+      weight: 500px;
+    }
+    line-height: 22px;
+    margin: {
+      top: 0;
+      bottom: 33px;
+    }
+  }
+}
+
+.saying {
+  margin: 0;
+  line-height: 22px;
+  color: #aaaaaa;
+
+  font: {
+    size: 16px;
+    weight: 500px;
+    style: italic;
+  }
+
+  &__text {
+    border-left: 2px solid $rang;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(-50%);
+      width: 28px;
+      height: 20px;
+      display: inline-block;
+      background: {
+        image: url("../images/quote.png");
+        repeat: no-repeat;
+        size: auto;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: "Oswald";
+    color: #000000;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: normal;
+    margin-bottom: 3px;
+  }
+
+  &__job {
+    color: #aaaaaa;
+    line-height: 18px;
+    font: {
+      size: 13px;
+      weight: 500;
+      style: normal;
+    }
+  }
+}

@@ -661,4 +661,85 @@ ol {
   margin: 0;
   margin-bottom: 28px;
 }
+
+.quality__wrapper {
+  max-width: 570px;
+}
+
+.quality__heading {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Oswald";
+  margin-top: 0;
+  margin-bottom: 39px;
+  line-height: 89px;
+  color: #191d28;
+}
+
+.quality__text {
+  color: #888888;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.saying {
+  margin: 0;
+  line-height: 22px;
+  color: #aaaaaa;
+  font-size: 16px;
+  font-weight: 500px;
+  font-style: italic;
+}
+
+.saying__text {
+  border-left: 2px solid #76a713;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.saying__text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 28px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../images/quote.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.saying__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.saying__name {
+  font-family: "Oswald";
+  color: #000000;
+  font-size: 18px;
+  line-height: 25px;
+  font-style: normal;
+  margin-bottom: 3px;
+}
+
+.saying__job {
+  color: #aaaaaa;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+}
 /*# sourceMappingURL=style.css.map */
