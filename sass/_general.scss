@@ -39,19 +39,31 @@ ol {
 .shop-now {
   padding: 14px 36px;
   display: inline-block;
-  background-color: #76a713;
+  background-color: $rang;
   color: #ffffff;
-  border: 1px solid #76a713;
+  border: 1px solid $rang;
   text-decoration: none;
   font-family: "Gilroy";
   font-size: 16px;
   font-weight: 700;
   align-self: flex-start;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $rang;
+  }
 }
 
-.shop-now:hover {
-  background-color: #ffffff;
-  color: #76a713;
+.active-press {
+  &:active {
+    opacity: 0.8;
+  }
+
+  &::after {
+  }
+
+  &::before {
+  }
 }
 
 /* ===================================== */

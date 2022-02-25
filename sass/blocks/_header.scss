@@ -134,7 +134,7 @@
 }
 
 .nav__link--active {
-  color: #76a713;
+  color: $rang;
 }
 
 .nav__link:last-child {
@@ -147,7 +147,7 @@
   line-height: 20px;
   color: #ffffff;
   padding: 10px 30px;
-  background-color: #76a713;
+  background-color: $rang;
   text-decoration: none;
 }
 
@@ -191,7 +191,7 @@
   justify-content: center;
   width: 13px;
   height: 13px;
-  background-color: #76a713;
+  background-color: $rang;
   color: #ffffff;
   font-size: 8px;
   line-height: 10px;

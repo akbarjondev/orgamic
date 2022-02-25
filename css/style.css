@@ -302,6 +302,10 @@ ol {
   color: #76a713;
 }
 
+.active-press:active {
+  opacity: 0.8;
+}
+
 /* ===================================== */
 .header-top {
   border-bottom: 1px solid #eeeeee;
